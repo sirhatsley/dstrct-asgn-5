@@ -30,6 +30,7 @@ public class CoinCounter
 		{
 			for(int i=0; i<counts.length;i++)
 			{
+				//Prints out every combo where the total is 0
 				System.out.print(counts[i]+" "+denominations[i]+"-coins ");
 			}
 			System.out.println("");
@@ -61,6 +62,7 @@ public class CoinCounter
 		output = makeChangeMin(denominations, total-denominations[0]);
 		for(int i=1; i<denominations.length; i++)
 		{
+			//Finds the min of all denominations
 			output=Math.min(output, makeChangeMin(denominations, total-denominations[i]));
 		}
 		return output+1;

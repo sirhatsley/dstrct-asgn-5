@@ -22,7 +22,7 @@ public class FileTraverserDriver{
 		target = "readme.txt";
 		FileTraverser.find(path, target);
 		//Takes forever, returns basically every readme on your computer.
-		
+		//Useful because it tests basically every case imaginable.
 		
 		/*
 		Note, I won't be able to run your driver since I don't have your file structure.  So, make sure to include

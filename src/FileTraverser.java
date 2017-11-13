@@ -34,13 +34,15 @@ public class FileTraverser{
 		{
 			for(int i=0;i<files.length;i++)
 			{
-				//System.out.println(files[i]);
 				if (new File(filePath+"\\"+files[i]).isDirectory())
 				{
+					//If the path is a directory, calls this function on that
+					//directory
 					find(filePath+"\\"+files[i],fileName);
 				}
 				if (files[i].equals(fileName))
 				{
+					//Prints the file if it exists
 					System.out.println(filePath+"\\"+fileName);
 				}
 			}
@@ -57,6 +59,5 @@ public class FileTraverser{
 	{
 		//THIS IS A PRACTICE PROBLEM
 	}//usage
-	
 	
 }
